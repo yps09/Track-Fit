@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".IndoorFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+<!-- Card 1-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/squatCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DCC879"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="8dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/squatTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Squat"
+                        android:fontFamily="serif"
+                        android:textColorHint="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/squat"/>
+                    <Button
+                        android:id="@+id/startsquat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+<!-- Card 2-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/jumpingjack"
+                android:layout_below="@id/squatCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DCC879"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="8dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/jumpingtxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Jumping Jack"
+                        android:fontFamily="serif"
+                        android:textColorHint="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/jump"/>
+                    <Button
+                        android:id="@+id/strtjumping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+<!--         card view for jumping jack-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pushups"
+                android:layout_below="@id/jumpingjack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DCC879"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="8dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/pushuptxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Push Up"
+                        android:fontFamily="serif"
+                        android:textColorHint="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/pushups"/>
+                    <Button
+                        android:id="@+id/startpushup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--             card view for pullups-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pullups"
+                android:layout_below="@id/pushups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DCC879"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="8dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/pullupstxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Pull UP"
+                        android:fontFamily="serif"
+                        android:textColorHint="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/pullups"/>
+                    <Button
+                        android:id="@+id/startpullups"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+<!--            Diamond Push Up-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/DiamondPushup"
+                android:layout_below="@id/pullups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#DCC879"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:elevation="8dp"
+                    android:gravity="start"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/Diamond_push_uptxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:hint="Diamond Push Up"
+                        android:fontFamily="serif"
+                        android:textColorHint="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/diamondpushup"/>
+                    <Button
+                        android:id="@+id/start_pushuptxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_alignParentBottom="true"
+                        android:padding="10dp"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <!-- TODO: Update blank fragment layout -->
+
+
+</FrameLayout>

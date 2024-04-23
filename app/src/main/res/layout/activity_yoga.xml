@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC879"
+    tools:context=".YogaActivity">
+
+   <ScrollView
+       android:id="@+id/yogaactivityScrollView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/timerTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+               android:hint="Timer: "
+               android:textColorHint="@color/black"
+               android:textSize="25sp"
+               android:layout_marginTop="15dp"
+               android:padding="5dp"
+               android:drawableTop="@drawable/timer_icon"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:ignore="HardcodedText" />
+
+           <com.airbnb.lottie.LottieAnimationView
+               android:id="@+id/yogaLotteyAnimation"
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:layout_margin="10dp"
+               android:layout_marginTop="15dp"
+               app:lottie_autoPlay="true"
+               app:lottie_loop="true"
+               app:lottie_rawRes="@raw/yoga"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/timerTextView">
+           </com.airbnb.lottie.LottieAnimationView>
+
+           <TextView
+               android:id="@+id/yogaActivityResult"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:hint="Here is the Score of Yoga"
+               android:padding="5dp"
+               android:textAlignment="center"
+               android:textColorHint="@color/black"
+               android:textSize="24sp"
+               android:layout_marginTop="15dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/yogaLotteyAnimation" />
+
+           <TextView
+               android:id="@+id/caloriesBurnedTextView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Score: 00"
+               android:textSize="18sp"
+               android:layout_marginTop="15dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/yogaActivityResult" />
+
+           <Button
+               android:id="@+id/startButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Start"
+               android:layout_marginTop="10dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/caloriesBurnedTextView" />
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/instructionCardView"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:background="@drawable/bg_btn"
+               android:layout_margin="10dp"
+
+               app:layout_constraintTop_toBottomOf="@+id/startButton">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="How To Do This"
+                   android:gravity="center"
+                   android:textSize="28sp"
+                   android:textStyle="bold"
+                   />
+           </androidx.cardview.widget.CardView>
+
+           <LinearLayout
+               android:id="@+id/InstructionStepLy"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:visibility="gone"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:layout_margin="10dp"
+               android:orientation="vertical"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/instructionCardView">
+
+               <TextView
+                   android:id="@+id/step1"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="5dp"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:text="1.Sit comfortably, breathe deeply"/>
+
+               <TextView
+                   android:id="@+id/step2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="5dp"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:text="2.Flow into downward dog"/>
+
+               <TextView
+                   android:id="@+id/step3"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="5dp"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:text="3.End with a peaceful meditation."/>
+
+               <TextView
+                   android:id="@+id/step4"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:paddingStart="5dp"
+                   android:textStyle="bold"
+                   android:textSize="20sp"
+                   android:text="4.Stretch into a soothing child's pose"/>
+
+               <TextView
+               android:id="@+id/step5"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+                   android:paddingStart="5dp"
+                   android:textStyle="bold"
+               android:textSize="20sp"
+               android:text="5.Finish with a gratitude-filled Savasana."/>
+
+           </LinearLayout>
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

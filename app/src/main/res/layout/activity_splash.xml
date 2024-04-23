@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/workoutSplashScreenImageView"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:alpha="0.5"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/dumble"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gymTxtBelowDumbleImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Fit"
+        android:textAllCaps="true"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-30dp"
+        app:layout_constraintEnd_toEndOf="@+id/workoutSplashScreenImageView"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/workoutSplashScreenImageView"
+        app:layout_constraintTop_toBottomOf="@+id/workoutSplashScreenImageView" />
+
+    <TextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Work out anytime, anywhere with a digital Digital Phone"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/workoutSplashScreenImageView"
+        app:layout_constraintStart_toStartOf="@+id/workoutSplashScreenImageView"
+        app:layout_constraintTop_toBottomOf="@+id/workoutSplashScreenImageView" />
+
+    <ImageView
+        android:id="@+id/runnerImg"
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:layout_marginTop="-65dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/runningimg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTxt"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <View
+        android:id="@+id/shadowView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadow_effect"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:visibility="invisible"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

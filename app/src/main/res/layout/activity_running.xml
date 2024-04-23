@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCC879"
+    tools:context=".RunningActivity">
+
+    <!-- Lottie AnimationView for Running -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieRunningAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerTextView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/running"/>
+
+    <!-- Timer TextView -->
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Timer: "
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:drawableTop="@drawable/timer_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText"/>
+
+    <!-- Result TextView with Placeholder Text -->
+    <TextView
+        android:id="@+id/runningResultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Here is the Running Score"
+        android:textSize="24dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/lottieRunningAnimation" />
+
+    <!-- Start Running Button -->
+
+    <TextView
+        android:id="@+id/distanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Distance: 0 meters"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/runningResultTextView"
+        app:layout_constraintStart_toStartOf="@+id/runningResultTextView"
+        app:layout_constraintTop_toBottomOf="@+id/runningResultTextView" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/runningResultTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Start Running"
+        app:layout_constraintEnd_toEndOf="@+id/distanceTextView"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="@+id/distanceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/distanceTextView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

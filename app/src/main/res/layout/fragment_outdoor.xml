@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OutdoorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+<!--           card view for Running-->
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/Runningcarview"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="20dp"
+               android:backgroundTint="#DCC879"
+               >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:elevation="8dp"
+                   android:gravity="start"
+                   android:padding="10dp"
+                   >
+
+                   <TextView
+                       android:id="@+id/Runningtxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:hint="Running"
+                       android:fontFamily="serif"
+                       android:textColorHint="@color/black"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/running"/>
+                   <Button
+                       android:id="@+id/Runningbtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Start"
+                       android:layout_alignParentBottom="true"
+                       android:padding="10dp"
+                       />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+
+<!--           card view for cycling-->
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/Cycling"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/Runningcarview"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="20dp"
+               android:backgroundTint="#DCC879"
+               >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:elevation="8dp"
+                   android:gravity="start"
+                   android:padding="10dp"
+                   >
+
+                   <TextView
+                       android:id="@+id/Cyclingtxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:hint="Cycling"
+                       android:fontFamily="serif"
+                       android:textColorHint="@color/black"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/cycling"/>
+                   <Button
+                       android:id="@+id/Cyclingbtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Start"
+                       android:layout_alignParentBottom="true"
+                       android:padding="10dp"
+                       />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+
+<!--           cardview for Yoaga-->
+
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/Yoga"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/Cycling"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="20dp"
+               android:backgroundTint="#DCC879"
+               >
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:elevation="8dp"
+                   android:gravity="start"
+                   android:padding="10dp">
+
+                   <TextView
+                       android:id="@+id/yogatxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:fontFamily="serif"
+                       android:hint="Yoga"
+                       android:textColorHint="@color/black"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_alignParentEnd="true"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/yogapng" />
+
+                   <Button
+                       android:id="@+id/yogabtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentBottom="true"
+                       android:padding="10dp"
+                       android:text="Start" />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+
+<!--           cardview trail running-->
+           <androidx.cardview.widget.CardView
+               android:id="@+id/Trail_running"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/Yoga"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="20dp"
+               android:backgroundTint="#DCC879"
+               >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:elevation="8dp"
+                   android:gravity="start"
+                   android:padding="10dp"
+                   >
+
+                   <TextView
+                       android:id="@+id/Trail_runningtxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:hint="Trail-Running"
+                       android:fontFamily="serif"
+                       android:textColorHint="@color/black"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/trail_running"/>
+                   <Button
+                       android:id="@+id/Trailrunningbtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Start"
+                       android:layout_alignParentBottom="true"
+                       android:padding="10dp"
+                       />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+<!--           cardview for hicking-->
+
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/hicking"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/Trail_running"
+               android:layout_margin="10dp"
+               app:cardCornerRadius="20dp"
+               android:backgroundTint="#DCC879"
+               >
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="160dp"
+                   android:elevation="8dp"
+                   android:gravity="start"
+                   android:padding="10dp"
+                   >
+
+                   <TextView
+                       android:id="@+id/hickingtxt"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="10dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginEnd="10dp"
+                       android:layout_marginBottom="10dp"
+                       android:hint="Hiking"
+                       android:fontFamily="serif"
+                       android:textColorHint="@color/black"
+                       android:textSize="25sp"
+                       android:textStyle="bold" />
+
+                   <ImageView
+                       android:layout_width="100dp"
+                       android:layout_height="100dp"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentEnd="true"
+                       android:src="@drawable/hicking"/>
+                   <Button
+                       android:id="@+id/hickingbtn"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Start"
+                       android:layout_alignParentBottom="true"
+                       android:padding="10dp"
+                       />
+               </RelativeLayout>
+           </androidx.cardview.widget.CardView>
+
+       </RelativeLayout>
+   </ScrollView>
+
+</FrameLayout>
